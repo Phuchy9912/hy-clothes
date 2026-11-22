@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giày thể thao — HY Clothes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/category.css">
+</head>
+<body>
+
+  <div class="announce">
+    <div class="announce-track" id="announceTrack"></div>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="index.html" class="logo">HY<em>.</em></a>
+        <ul class="nav-links">
+          <li><a href="ao-the-thao.html">Áo thể thao</a></li>
+          <li><a href="quan-the-thao.html">Quần thể thao</a></li>
+          <li><a href="giay-the-thao.html">Giày thể thao</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="nav-auth"><a href="login.html">Đăng nhập</a><span>/</span><a href="register.html">Đăng ký</a></div>
+          <button class="icon-btn" aria-label="Tìm kiếm">⌕</button>
+          <button class="icon-btn" aria-label="Yêu thích">♡</button>
+          <button class="icon-btn" id="cartIconBtn" aria-label="Giỏ hàng">
+            🛍
+            <span class="cart-badge" id="cartCount">0</span>
+          </button>
+          <button class="icon-btn burger" aria-label="Menu">≡</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html">Trang chủ</a><span class="sep">/</span><span class="current">Giày thể thao</span>
+    </div>
+  </div>
+
+  <section class="cat-banner">
+    <div class="wrap">
+      <div class="cat-banner-inner">
+        <div class="cat-banner-text">
+          <span class="eyebrow">Danh mục</span>
+          <h1>GIÀY THỂ THAO</h1>
+          <p>Giày chạy bộ, sneaker streetwear, giày tập gym — đế êm, bám tốt, thiết kế năng động cho mọi hoạt động.</p>
+        </div>
+        <div class="cat-banner-media">
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&q=80&auto=format&fit=crop" alt="Giày thể thao HY Clothes">
+          <div class="cat-banner-count">
+            <span class="big" id="bannerCount">0</span>
+            <span class="small">MẪU GIÀY ĐANG BÁN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="filter-bar">
+        <div class="filter-pills">
+          <button class="filter-pill active" data-gender="all">Tất cả</button>
+          <button class="filter-pill" data-gender="nam">Nam</button>
+          <button class="filter-pill" data-gender="nu">Nữ</button>
+          <button class="filter-pill" data-gender="unisex">Unisex</button>
+        </div>
+        <div class="filter-right">
+          <span><span class="result-count" id="resultCount">0</span> sản phẩm</span>
+          <select class="sort-select" id="sortSelect">
+            <option value="default">Mặc định</option>
+            <option value="new">Hàng mới về</option>
+            <option value="price-asc">Giá tăng dần</option>
+            <option value="price-desc">Giá giảm dần</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="wrap promo-inner">
+      <div>
+        <h2>Đăng ký thành viên —<br>Sale trước 24 giờ.</h2>
+        <p>Nhận mã giảm 10% cho đơn đầu tiên khi tạo tài khoản HY Clothes.</p>
+      </div>
+      <a href="#" class="btn btn-ghost" style="border-color:#fff;">Đăng ký ngay →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-logo">HY<em>.</em></div>
+          <p>Shop bán đồ thể thao online — nhiều sale, nhiều mức giá hợp lý. Áo, quần, giày thể thao chính hãng, cập nhật mỗi tuần.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Danh mục</h4>
+          <ul>
+            <li><a href="ao-the-thao.html">Áo thể thao</a></li>
+            <li><a href="quan-the-thao.html">Quần thể thao</a></li>
+            <li><a href="giay-the-thao.html">Giày thể thao</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="#">Tra cứu đơn hàng</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Hướng dẫn chọn size</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Nhận tin khuyến mãi</h4>
+          <div class="foot-sub">
+            <input type="email" placeholder="email@cua-ban.com">
+            <button>Gửi</button>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 HY Clothes. Thể thao đúng chất, giá đúng tầm.</span>
+        <div class="foot-social">
+          <a href="#">f</a><a href="#">ig</a><a href="#">tt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-head">
+      <h3>Giỏ hàng</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Đóng">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty" id="cartEmpty">Giỏ hàng của bạn đang trống.</p>
+    </div>
+    <div class="cart-drawer-foot">
+      <div class="cart-total-row">
+        <span>Tổng cộng</span>
+        <span class="mono" id="cartTotal">0đ</span>
+      </div>
+      <a href="#" class="btn btn-primary">Thanh toán →</a>
+      <button class="cart-clear-btn" id="cartClearBtn">Xóa toàn bộ giỏ hàng</button>
+    </div>
+  </aside>
+
+<script>
+  const CATEGORY_TYPE = "giay";
+</script>
+
+<script src="./js/cart.js"></script>
+<script src="./js/giay-products.js"></script>
+<script src="./js/category.js"></script>
+
+</body>
+</html>

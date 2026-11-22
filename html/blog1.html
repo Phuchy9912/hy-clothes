@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>5 cách phối đồ thể thao đẹp và năng động | HY Clothes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  line-height: 1.7;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  background: #111;
+  color: white;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.logo em {
+  color: #e5ff00;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e5ff00;
+}
+
+
+/* ================= ARTICLE ================= */
+
+.article {
+  width: min(1000px, 92%);
+  margin: 50px auto;
+}
+
+.category {
+  font-family: "Space Mono", monospace;
+  color: #777;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+
+/* TIÊU ĐỀ CHÍNH */
+
+.article h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.08;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  max-width: 850px;
+  margin-bottom: 20px;
+}
+
+
+/* MÔ TẢ */
+
+.intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin-bottom: 18px;
+}
+
+
+/* NGÀY ĐĂNG */
+
+.date {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+
+/* ẢNH ĐẦU BÀI */
+
+.hero {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 35px;
+}
+
+
+/* ================= NỘI DUNG ================= */
+
+.content {
+  background: white;
+  padding: 45px;
+}
+
+
+/* TIÊU ĐỀ CÁC PHẦN */
+
+.content h2 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+
+  margin-top: 45px;
+  margin-bottom: 15px;
+
+  /* Không cho chữ bị chồng */
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.content h2:first-child {
+  margin-top: 0;
+}
+
+
+/* ĐOẠN VĂN */
+
+.content p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+
+/* ẢNH TRONG BÀI */
+
+.content img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 25px 0 30px;
+}
+
+
+/* ================= TIP ================= */
+
+.tip {
+  background: #111;
+  color: white;
+  padding: 20px 25px;
+  margin: 25px 0;
+  border-left: 5px solid #e5ff00;
+  line-height: 1.6;
+}
+
+.tip strong {
+  color: #e5ff00;
+}
+
+
+/* ================= NÚT QUAY LẠI ================= */
+
+.back {
+  display: inline-block;
+  margin-top: 30px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  padding: 13px 22px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.back:hover {
+  background: #e5ff00;
+  color: #111;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #111;
+  color: white;
+  padding: 40px 7%;
+  margin-top: 70px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+footer h3 em {
+  color: #e5ff00;
+  font-style: normal;
+}
+
+footer p {
+  color: #aaa;
+  margin: 5px 0;
+}
+
+footer strong {
+  color: #e5ff00;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 14px 5%;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .article {
+    width: 92%;
+    margin: 35px auto;
+  }
+
+  .article h1 {
+    font-size: 44px;
+    line-height: 1.08;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .content h2 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .content img {
+    height: 320px;
+  }
+}
+
+
+/* ================= ĐIỆN THOẠI ================= */
+
+@media (max-width: 480px) {
+
+  header {
+    padding: 12px 18px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
+
+  .article {
+    width: 92%;
+    margin: 30px auto;
+  }
+
+
+  /* Tiêu đề chính nhỏ hơn trên điện thoại */
+
+  .article h1 {
+    font-size: 36px;
+    line-height: 1.08;
+    margin-bottom: 16px;
+  }
+
+
+  .intro {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  .date {
+    font-size: 10px;
+    margin-bottom: 22px;
+  }
+
+
+  .hero {
+    height: 240px;
+    margin-bottom: 25px;
+  }
+
+
+  .content {
+    padding: 22px 18px;
+  }
+
+
+  /* Tiêu đề phần nhỏ lại */
+
+  .content h2 {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+
+  .content img {
+    height: 230px;
+    margin: 20px 0 25px;
+  }
+
+
+  .tip {
+    padding: 17px;
+    font-size: 14px;
+  }
+
+
+  .back {
+    font-size: 12px;
+    padding: 12px 18px;
+  }
+
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <a href="index.html" class="logo">
+      HY<em>.</em>
+    </a>
+
+    <nav>
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="index.html#shop">SẢN PHẨM</a>
+      <a href="index.html#blog">BLOG</a>
+    </nav>
+
+  </header>
+
+
+  <!-- BÀI BLOG -->
+  <main class="article">
+
+    <div class="category">
+      BLOG · THỜI TRANG THỂ THAO
+    </div>
+
+    <h1>
+      5 Cách Phối Đồ Thể Thao Đẹp & Năng Động
+    </h1>
+
+    <p class="intro">
+      Không cần quá cầu kỳ, chỉ với một vài món đồ cơ bản,
+      bạn vẫn có thể tạo ra những outfit thể thao vừa đẹp,
+      vừa thoải mái và phù hợp với nhiều hoàn cảnh.
+    </p>
+
+    <div class="date">
+      HY CLOTHES · 23/08/2026
+    </div>
+
+
+    <!-- ẢNH ĐẦU BÀI -->
+    <img
+      class="hero"
+      src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=85"
+      alt="Trang phục thể thao">
+
+
+    <article class="content">
+
+      <h2>01. Áo thun + quần short</h2>
+
+      <p>
+        Đây là cách phối đồ đơn giản và dễ áp dụng nhất.
+        Một chiếc áo thun thể thao kết hợp cùng quần short
+        sẽ tạo nên phong cách năng động, trẻ trung.
+      </p>
+
+      <p>
+        Bạn có thể lựa chọn áo màu trắng, đen hoặc các màu
+        nổi bật và kết hợp với quần short có màu tương phản.
+        Outfit này đặc biệt phù hợp khi đi tập gym, chạy bộ
+        hoặc đi chơi cùng bạn bè.
+      </p>
+
+      <img
+        src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1000&q=80"
+        alt="Áo thun và quần short">
+
+
+      <h2>02. Áo oversize + quần jogger</h2>
+
+      <p>
+        Nếu bạn yêu thích phong cách streetwear thì áo
+        oversize kết hợp với quần jogger là một lựa chọn
+        rất đáng thử.
+      </p>
+
+      <p>
+        Áo rộng giúp tạo cảm giác thoải mái trong khi quần
+        jogger giữ được vẻ gọn gàng và mạnh mẽ.
+        Bạn có thể kết hợp thêm sneaker để hoàn thiện outfit.
+      </p>
+
+      <img
+        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1000&q=80"
+        alt="Phong cách thể thao">
+
+
+      <h2>03. Áo hoodie + quần thể thao</h2>
+
+      <p>
+        Hoodie là món đồ rất phù hợp cho những ngày thời tiết
+        mát mẻ. Kết hợp hoodie với quần thể thao tạo ra
+        phong cách casual nhưng vẫn rất năng động.
+      </p>
+
+      <div class="tip">
+        <strong>TIP:</strong>
+        Hãy ưu tiên những màu trung tính như đen, trắng,
+        xám hoặc be nếu bạn muốn outfit dễ phối và dễ mặc.
+      </div>
+
+
+      <h2>04. Áo jersey + quần short</h2>
+
+      <p>
+        Áo jersey mang đậm tinh thần thể thao và đặc biệt
+        phù hợp với những người yêu thích bóng đá,
+        bóng rổ hoặc các môn thể thao đồng đội.
+      </p>
+
+      <p>
+        Một chiếc jersey rộng vừa phải kết hợp cùng quần
+        short và sneaker sẽ tạo nên một outfit cực kỳ
+        trẻ trung.
+      </p>
+
+      <img
+        src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1000&q=80"
+        alt="Trang phục thể thao năng động">
+
+
+      <h2>05. Set đồ thể thao đồng bộ</h2>
+
+      <p>
+        Nếu bạn không muốn mất nhiều thời gian suy nghĩ
+        cách phối đồ thì một set thể thao đồng bộ là
+        lựa chọn đơn giản nhất.
+      </p>
+
+      <p>
+        Các bộ đồ đồng màu giúp tổng thể trông gọn gàng,
+        chuyên nghiệp và có tính thời trang cao.
+      </p>
+
+      <div class="tip">
+        <strong>GỢI Ý:</strong>
+        Kết hợp set đồ thể thao với một đôi sneaker
+        đơn giản và tất cổ cao để tạo điểm nhấn.
+      </div>
+
+
+      <h2>Lời kết</h2>
+
+      <p>
+        Phối đồ thể thao không nhất thiết phải phức tạp.
+        Chỉ cần lựa chọn những món đồ phù hợp với vóc dáng
+        và biết cách kết hợp màu sắc, bạn hoàn toàn có thể
+        tạo ra một outfit đẹp và thoải mái.
+      </p>
+
+      <p>
+        Hãy thử 5 cách phối đồ trên và tìm ra phong cách
+        phù hợp nhất với bạn nhé!
+      </p>
+
+
+      <a href="index.html#blog" class="back">
+        ← QUAY LẠI BLOG
+      </a>
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+        <h3>HY<em>.</em></h3>
+        <p>Thể thao đúng chất, giá đúng tầm.</p>
+      </div>
+
+      <div>
+        <p><strong>HOTLINE:</strong> 0123 456 789</p>
+        <p><strong>ZALO:</strong> 0123 456 789</p>
+        <p><strong>ĐỊA CHỈ:</strong> TP. Hồ Chí Minh</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

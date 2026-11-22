@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập — HY Clothes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">HY CLOTHES<em>.</em></a>
+      <a href="index.html" class="back-link">← Về trang chủ</a>
+    </div>
+  </header>
+
+  <div class="stage">
+
+    <div class="side">
+      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?w=900&q=80&auto=format&fit=crop" alt="Người mặc đồ thể thao HY Clothes">
+      <div class="side-badge">
+        <span class="big">-50%</span>
+        <span class="small">SALE TUẦN NÀY</span>
+      </div>
+      <div class="side-content">
+        <span class="eyebrow">HY Clothes</span>
+        <h2>Thể thao đúng chất, giá đúng tầm.</h2>
+        <p>Đăng nhập để theo dõi đơn hàng, xem sản phẩm đã lưu và nhận ưu đãi sale trước 24 giờ.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="card">
+
+        <div class="form-head">
+          <span class="sec-tag">CHÀO MỪNG TRỞ LẠI</span>
+          <h1>Đăng nhập</h1>
+          <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+        </div>
+
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="email@cua-ban.com" required>
+          </div>
+          <div class="field">
+            <label for="loginPw">Mật khẩu</label>
+            <div class="pw-wrap">
+              <input type="password" id="loginPw" placeholder="Nhập mật khẩu" required>
+              <button type="button" class="pw-toggle" onclick="togglePw('loginPw', this)">Hiện</button>
+            </div>
+          </div>
+          <div class="row-between">
+            <label class="checkbox"><input type="checkbox"> Ghi nhớ đăng nhập</label>
+            <a href="#" class="link-accent">Quên mật khẩu?</a>
+          </div>
+          <a href="index.html" type="submit" class="btn btn-primary">Đăng nhập →</a>
+          
+        </form>
+
+        <div class="divider">HOẶC</div>
+        <div class="social-row">
+          <button class="btn-social">Google</button>
+          <button class="btn-social">Facebook</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="./js/login.js"></script>
+</html>

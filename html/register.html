@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng ký — HY Clothes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">HY<em>.</em></a>
+      <a href="index.html" class="back-link">← Về trang chủ</a>
+    </div>
+  </header>
+
+  <div class="stage">
+
+    <div class="side">
+      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?w=900&q=80&auto=format&fit=crop" alt="Người mặc đồ thể thao HY Clothes">
+      <div class="side-badge">
+        <span class="big">-50%</span>
+        <span class="small">CHO THÀNH VIÊN MỚI</span>
+      </div>
+      <div class="side-content">
+        <span class="eyebrow">HY Clothes</span>
+        <h2>Thể thao đúng chất, giá đúng tầm.</h2>
+        <p>Tạo tài khoản để lưu sản phẩm yêu thích, theo dõi đơn hàng và nhận ưu đãi sale trước 24 giờ.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="card">
+
+        <div class="form-head">
+          <span class="sec-tag">GIA NHẬP HY CLOTHES</span>
+          <h1>Tạo tài khoản</h1>
+          <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+        </div>
+
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="regName">Họ và tên</label>
+            <input type="text" id="regName" placeholder="Nguyễn Văn A" required>
+          </div>
+          <div class="field">
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" placeholder="email@cua-ban.com" required>
+          </div>
+          <div class="field">
+            <label for="regPhone">Số điện thoại</label>
+            <input type="tel" id="regPhone" placeholder="09xx xxx xxx">
+          </div>
+          <div class="field">
+            <label for="regPw">Mật khẩu</label>
+            <div class="pw-wrap">
+              <input type="password" id="regPw" placeholder="Tối thiểu 8 ký tự" required oninput="checkStrength(this.value)">
+              <button type="button" class="pw-toggle" onclick="togglePw('regPw', this)">Hiện</button>
+            </div>
+            <div class="strength">
+              <div id="s1"></div><div id="s2"></div><div id="s3"></div>
+            </div>
+            <span class="hint">Nên có chữ hoa, số và ký tự đặc biệt.</span>
+          </div>
+          <label class="checkbox"><input type="checkbox" required> Tôi đồng ý với <a href="#" class="link-accent">Điều khoản</a> và <a href="#" class="link-accent">Chính sách bảo mật</a></label>
+          <button type="submit" class="btn btn-primary">Tạo tài khoản →</button>
+        </form>
+
+        <div class="divider">HOẶC</div>
+        <div class="social-row">
+          <button class="btn-social">Google</button>
+          <button class="btn-social">Facebook</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+<script src="./js/register.js">
+ 
+</script>
+
+</body>
+</html>
